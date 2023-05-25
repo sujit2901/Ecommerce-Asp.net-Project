@@ -1,0 +1,78 @@
+﻿:root {
+    --primary: #f9e7d3;
+    --secondary: #f4f8fb;
+    --primary-alt: #ff5a4c;
+    --secondar-alt: #ff8695;
+}
+
+*, body {
+    margin: 0;
+    padding: 0;
+    color: #000;
+
+}
+bady {
+    overflow-x:hidden!important;
+}
+
+.u-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.primary {
+    background-color: var(--primary-alt) !important;
+    color: aliceblue;
+    border: none;
+}
+
+.secondary-alt {
+    background-color: var(--secondar-alt) !important;
+    color: aliceblue;
+    border: none;
+}
+
+.secondary {
+    background-color: var(--secondary);
+}
+
+.primary-alt {
+    background-color: var(--primary) !important;
+    color: aliceblue;
+}
+
+.card {
+    border-radius: 20px;
+}
+.nav-link{
+    background-color:var(--primary-alt)!important;
+    font-size:18px;
+    color:white;
+    border-radius:20px;
+
+}
+.navbar {
+    border-radius: 0px 0px 50px 50px !important;
+    
+    
+}
+.product-card {
+    padding: 1rem;
+    background-color: var(--primary);
+}
+.product-card img{
+    height:40vh;
+}
+
+.productcard-body {
+    height: 15rem;
+    padding: 2rem;
+}
+.t-decor {
+    text-decoration: none;
+}
+.fa-plus::before .fa-minus::before {
+    color: #ff5a4c!important;
+}

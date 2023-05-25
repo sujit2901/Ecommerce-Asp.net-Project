@@ -1,0 +1,102 @@
+﻿body {
+}
+:root {
+    --primary: #f9e7d3;
+    --secondary: #f4f8fb;
+    --primary-alt: #ff5a4c;
+    --secondar-alt: #ff8695;
+}
+
+*, body {
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+.u-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.primary {
+    background-color: var(--primary-alt)!important;
+    color: aliceblue;
+    border: none;
+}
+.secondary-alt {
+    background-color: var(--secondar-alt) !important;
+    color: aliceblue;
+    border: none;
+}
+
+.secondary {
+    background-color: var(--secondary);
+}
+
+.primary-alt {
+    background-color: var(--primary)!important;
+    color: aliceblue;
+}
+
+.card {
+    border-radius: 20px;
+}
+
+.t-decor {
+    text-decoration: none;
+}
+
+.button-temp {
+    border-radius: 20px;
+}
+.text-decor{
+    text-decoration:none!important;
+   
+}
+.sidenav {
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--primary);
+    overflow-x: hidden;
+    padding-top: 120px;
+}
+
+    .sidenav button {
+        margin: 10px;
+        width:80%;
+        text-decoration: none;
+        font-size: 18px;
+        color: #fff;
+        display: block;
+    }
+
+        .sidenav button:hover {
+            color: #f1f1f1;
+        }
+
+.main {
+    margin-left: 250px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+nav {
+    z-index: 999;
+   
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav button {
+            font-size: 18px;
+        }
+}

@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.Master.cs" Inherits="E_commmerce.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Admin Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    
+    <link rel="stylesheet" href="Admin/assets/css/admin_style.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+     <nav class="navbar primary-alt py-3 navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a class="navbar-brand" href="#"><img src="..\assets\images\logo.PNG" style="width:4rem;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              
+                
+            </ul>
+
+            <div class="d-flex">
+                
+               <a class="text-decor" href="Logout.aspx"> <button type="button" class="btn primary px-4 py-2 button-temp">Logout</button></a>
+                
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="sidenav">
+          <a class="text-decor" href="home.aspx"><button type="button" class="btn primary px-4 py-2 button-temp">Home</button></a>
+          <a class="text-decor" href="AddProduct.aspx"><button type="button" class="btn primary px-4 py-2 button-temp">Add Product</button></a>
+          <a class="text-decor" href="ManageProduct.aspx"><button type="button" class="btn primary px-4 py-2 button-temp">Manage Products</button></a>
+          <button type="button" class="btn primary px-4 py-2 button-temp">Orders</button>
+        
+      </div>
+      
+    <div class="main">
+
+        <form id="form1" runat="server">
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

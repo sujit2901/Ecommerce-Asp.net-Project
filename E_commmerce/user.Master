@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="user.Master.cs" Inherits="E_commmerce.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Loc-Off-Mall</title>   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav class="navbar primary-alt p-4 navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="assets/images/logo.PNG" style="width:5rem;"/></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-5" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-2">
+              <a class="nav-link active px-4 py-2" aria-current="page" href="userHome.aspx">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link px-4 py-2" href="#">Shop By Category</a>
+            </li>
+              <li class="nav-item mx-2">
+              <a class="nav-link px-4 py-2" href="orders.aspx">My Orders</a>
+            </li>
+            
+            
+          </ul>
+          <div class="d-flex" role="search">
+            
+              <a href="AddCart.aspx?product_id=0" class="t-decor"><button class="btn btn-outline-success bg-light primary-alt p-3" type="submit" style="background-color:#fff!important;border-radius:50%;border:1px solid #ff5a4c;"><i class="fa-solid fa-cart-shopping fa-bounce fa-xl" style="color:#ff5a4c;background-color#fff" ></i></button></a> &nbsp;&nbsp;
+              &nbsp;&nbsp;
+             <a href="profile.aspx" class="t-decor"><button class="btn btn-outline-success bg-light primary-alt p-3" style="background-color:#fff!important;border-radius:50%;border:1px solid #ff5a4c;"><i class="fa-solid fa-user fa-flip fa-xl" style="color:#ff5a4c;background-color#fff" ></i></button></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
