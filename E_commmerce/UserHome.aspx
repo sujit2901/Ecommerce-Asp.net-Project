@@ -17,7 +17,11 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<div class="conatiner">
+    <div class="row">
+
 <h5 class="p-4">View All Products</h5> 
+
 
     
     <asp:DataList ID="DataList1" runat="server" DataKeyField="Id" DataSourceID="SqlDataSource1">
@@ -43,4 +47,7 @@
     </asp:DataList>
         
     <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' SelectCommand="SELECT [Id], [Name], [Category], [Price], [Stock], [Description], [Image] FROM [Product]"></asp:SqlDataSource>
+</div>
+
+</div>
 </asp:Content>
